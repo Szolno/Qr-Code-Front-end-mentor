@@ -1,93 +1,73 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    font-size: 16px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+* {
+  box-sizing: border-box margin 0 font-size 16px;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color:hsl(212, 45%, 89%) ;
-    height: 100vh;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(212deg, 45%, 89%);
+  height: 100vh;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+body .tarjeta {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: hsl(0deg, 0%, 100%);
+  width: 25vw;
+  border-radius: 5%;
+  max-height: 80vh;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+}
+body .tarjeta img {
+  border-radius: 5%;
+  max-width: 54%;
+  max-height: 60%;
+  margin-top: 4%;
+}
+body .tarjeta .texto {
+  margin: 10% 8%;
+  font-size: 1rem;
+  max-width: 80%;
+}
+body .tarjeta .texto h1 {
+  margin-bottom: 10%;
+  font-weight: bolder;
+  font-size: 1.7rem;
+}
+body .tarjeta .texto h2 {
+  font-size: 1.2rem;
+  color: hsl(212deg, 20%, 67%);
+}
+body .tarjeta .attribution {
+  position: fixed;
+  top: 95%;
 }
 
-img{
-    border-radius: 5%;
-    max-width: 54%;
-    max-height: 60%;
-    margin-top: 4%; 
-}
-
-.tarjeta{
-    text-align: center;
-    display:flex;
-    flex-direction:column;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: hsl(0, 0%, 100%);
-    width: 25vw;
-    border-radius: 5%;
+@media (max-width: 970px) {
+  .tarjeta {
     max-height: 80vh;
-    box-shadow: 0px 4px 7px rgb(0 0 0 / 25%);
+    width: 60vw;
+    padding-top: 0;
+  }
 }
-
-.texto {
-    margin: 10% 8%;
+@media (max-width: 600px) {
+  .tarjeta {
+    max-height: 80vh;
+    width: 80vw;
+    padding-top: 0;
+  }
+  .img {
+    max-width: 50%;
+  }
+  .tarjeta h1 {
+    font-size: 1.3rem;
+  }
+  .tarjeta h2 {
     font-size: 1rem;
-    max-width: 80%;
-}
-
-.texto h1 {
-    margin-bottom: 10%;
-    font-weight: bolder ;
-    font-size: 1.7rem;
-}
-
-.texto h2{
-    font-size: 1.2rem;
-    color:hsl(212, 20%, 67%);
-}
-
-.attribution {
-    position: fixed;
-    top: 95%;
-}
-
-@media (max-width:970px) { 
-
-    .tarjeta{
-        max-height: 80vh;
-        width: 60vw;
-        padding-top: 0;
-    }
-
-    .img{
-        
-    }
-}
-
-@media (max-width:600px) { 
-
-    .tarjeta{
-        max-height: 80vh;
-        width: 80vw;
-        padding-top: 0;
-    }
-
-    .img{
-        max-width: 50%;
-    }
-
-    .tarjeta h1{
-        font-size: 1.3rem;
-    }
-
-    .tarjeta h2{
-        font-size: 1rem;
-    }
-}
-
-
+  }
+}/*# sourceMappingURL=styles.css.map */
